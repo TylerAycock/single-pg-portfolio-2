@@ -1,0 +1,32 @@
+.header-l, .header-xl, .header-m{
+    color: var(--white);
+  }
+
+  .header-xl{
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+
+  .header-l{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+
+  .header-m{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+
+
+.layout{
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

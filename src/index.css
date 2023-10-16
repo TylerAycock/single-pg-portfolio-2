@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+/* root colors */
+:root{
+  --black: #151515;
+  --green: #4ee1a0;
+  --grey: #242424;
+  --light-grey: #d9d9d9;
+  --white: #fff;
+}
+
+/* Reset all margins and padding to zero */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Remove default list styles */
+  ul, ol {
+	list-style: none;
+  }
+  
+  /* Remove default hyperlink styles */
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  /* Set a base font size and family */
+  body {
+  font-family: 'Space Grotesk', sans-serif;
+	font-size: 1em;
+  line-height: 28px;
+  background-color: var(--black);
+  color: var(--light-grey);
+  }
+  
+  /* Remove any default styling for headings */
+  h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+  color: var(--white); 
+  }
+  
+  /* Remove default button styling */
+  button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+  }
+
