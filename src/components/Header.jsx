@@ -43,7 +43,7 @@ const Header = () => {
             <button>Contact Me</button>
           </a>
         </div>
-        <img src={desktopProfile} alt="profile photo" className="header__pic"/>
+        <img src={desktopProfile} alt="profile photo" className="header__pic" />
       </div>
     </header>
   );
