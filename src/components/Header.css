@@ -14,11 +14,10 @@ header{
     padding-top: 15px;
 }
 
-
-
-.logo:hover{
-    transform: scale(1.1);
+ .logo:hover{
+    transform: scale(1.2);
 }
+
 
 .header__title{
     font-size: 32px;
@@ -68,6 +67,10 @@ button{
     text-transform: uppercase;
 }
 
+button:hover{
+    color: var(--green);
+}
+
 .header__main img{
     height: auto;
     max-width: 500px;
@@ -78,8 +81,3 @@ button{
     padding-top: 10px;
 }
 
-.header__rings{
-    position: absolute;
-    left: -350px;
-    top: 120px;
-  }

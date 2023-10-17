@@ -1,14 +1,17 @@
-.contact__wrapper{
+/* .contact__wrapper{
     background-color: #242424;
+    position: relative;
     left: 50%;
+    margin: 0px auto;
     margin-left: -50vw;
     padding-bottom: 50px;
-    position: relative;
-    width: 100vw;
-}
+    max-width: 100vw;
+} */
 
 .contact__section--wrapper{
-    margin: 0 auto;
+    border-top: 1px solid var(--white);
+    /* margin: 0 auto; */
+    padding-top: 50px;
     max-width: 1110px;
     padding-left: 20px;
     padding-right: 20px;
@@ -54,8 +57,3 @@ footer{
     padding: 20px 0px;
 }
 
-.footer__rings{
-    position: absolute;
-    bottom: 200px;
-    left: -150px;
-  }

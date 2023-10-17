@@ -20,7 +20,6 @@
     font-size: 24px;
     line-height: 32px;
   }
-  
 
 
 .layout{
@@ -30,6 +29,102 @@
 }
 
 
+/* rings */
+
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+.header__rings{
+  position: absolute;
+  left: -150px;
+  top: 120px;
+}
+
+.skills__rings{
+  position: absolute;
+  right: 20px;
+  top: 850px;
+}
+
+.footer__rings{
+  position: absolute;
+  bottom: 200px;
+  left: -150px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /* header  section */
+  .header{
+  }
+  
+
+ .header .header__main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  /* .header__main .header__info{
+    display: block;
+  } */
+
+  .header__main .header__info h1{
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .header__main .header__info p{
+    width: 100%;
+  }
+
+header .header__main img{
+    width: 175px;
+    height: auto;
+    order: -1;
+    position: static;
+  }
+
+  /* skills secetion */
+  .layout .skills__section{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+
+  /* contact section */
+
+   .contact__section--wrapper .contact__section{
+    grid-template-columns: 1fr;
+  }
+
+
+  .header__rings{
+    left: -350px;
+    top: 120px;
+  }
+  
+  .skills__rings{
+    display: none;
+  }
+  
+  .footer__rings{
+    bottom: 100px;
+    left: -350px;
+  }
+
+}
 
 
 
