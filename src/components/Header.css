@@ -52,6 +52,7 @@ header{
 .header__main p{
     margin-bottom: 70px;
     width: 35%;
+    color: var(--white);
 }
 
 button{
@@ -76,3 +77,9 @@ button{
     z-index: -1;
     padding-top: 10px;
 }
+
+.header__rings{
+    position: absolute;
+    left: -350px;
+    top: 120px;
+  }

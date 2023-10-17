@@ -7,10 +7,10 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="layout">
-      <Header/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+      <Header />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

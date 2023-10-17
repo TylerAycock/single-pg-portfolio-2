@@ -3,4 +3,12 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     padding: 50px 20px;
+    position: relative;
 }
+
+.skills__rings{
+    position: absolute;
+    right: -350px;
+    top: 150px;
+  }
+  
