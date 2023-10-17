@@ -1,5 +1,5 @@
 import "./Header.css";
-import desktopProfile from "../assets/images/image-profile-desktop.webp";
+import clear from '../assets/images/clear.png'
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
             href="https://www.linkedin.com/in/tyler-aycock-2b2191a8/"
             target="blank"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" className="logo">
               <path
                 fill="#FFF"
                 fillRule="evenodd"
@@ -20,7 +20,7 @@ const Header = () => {
             </svg>
           </a>
           <a href="https://github.com/TylerAycock" target="blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" className="logo">
               <path
                 fill="#FFF"
                 fillRule="evenodd"
@@ -43,7 +43,7 @@ const Header = () => {
             <button>Contact Me</button>
           </a>
         </div>
-        <img src={desktopProfile} alt="profile photo" className="header__pic" />
+        <img src={clear} alt="profile photo"/>
       </div>
     </header>
   );

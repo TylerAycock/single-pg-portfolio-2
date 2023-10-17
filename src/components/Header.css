@@ -2,7 +2,7 @@
 
 header{
     border-bottom: 1px solid var(--white);
-    padding-bottom: 240px;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -12,6 +12,12 @@ header{
     align-items: center;
     padding-right: 15px;
     padding-top: 15px;
+}
+
+
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .header__title{
@@ -61,11 +67,12 @@ button{
     text-transform: uppercase;
 }
 
-.header__pic{
-    height: 670px;
-    max-width: 445px;
+.header__main img{
+    height: auto;
+    max-width: 500px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
+    padding-top: 10px;
 }
