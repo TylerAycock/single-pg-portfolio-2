@@ -11,11 +11,11 @@ const Skills = () => {
   ];
   return (
     <section className="skills__section">
-      {data.map(({ skill, years }) => {
+      {data.map((item, index) => {
         return (
-          <div className="skill__item">
-            <h2 className="header-l">{skill}</h2>
-            <p>{years} years experience</p>
+          <div className="skill__item" key={index}>
+            <h2 className="header-l">{item.skill}</h2>
+            <p>{item.years} year experience</p>
           </div>
         );
       })}
