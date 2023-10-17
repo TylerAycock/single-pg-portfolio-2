@@ -56,12 +56,41 @@ svg:not(:root) {
 }
 
 
+
+@media screen and (max-width: 770px){
+  /* skills section */
+  .layout .skills__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* contact sectopm */
+
+  .contact__section--wrapper .contact__section{
+    grid-template-columns: 1fr;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .header__rings{
+    left: -350px;
+    top: 120px;
+  }
+  
+  .skills__rings{
+    display: none;
+  }
+  
+  .footer__rings{
+    bottom: 100px;
+    left: -350px;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
 
   /* header  section */
-  .header{
-  }
-  
 
  .header .header__main{
     align-items: center;
@@ -95,33 +124,10 @@ header .header__main img{
 
   /* skills secetion */
   .layout .skills__section{
-    display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     text-align: center;
-  }
-
-
-  /* contact section */
-
-   .contact__section--wrapper .contact__section{
-    grid-template-columns: 1fr;
-  }
-
-
-  .header__rings{
-    left: -350px;
-    top: 120px;
-  }
-  
-  .skills__rings{
-    display: none;
-  }
-  
-  .footer__rings{
-    bottom: 100px;
-    left: -350px;
   }
 
 }
