@@ -55,13 +55,32 @@ svg:not(:root) {
   left: -150px;
 }
 
+.circle{
+  display: none;
+}
+
 
 
 @media screen and (max-width: 770px){
+
+  /* header section  */
+
+  .header__main .header__info h1{
+    width: 80%;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .header__main .header__info p{
+    width: 50%;
+  }
+
   /* skills section */
   .layout .skills__section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    text-align: center;
   }
 
   /* contact sectopm */
@@ -79,6 +98,13 @@ svg:not(:root) {
   
   .skills__rings{
     display: none;
+  }
+
+  .circle{
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 950px;
   }
   
   .footer__rings{
@@ -100,10 +126,6 @@ svg:not(:root) {
     padding-top: 40px;
     text-align: center;
   }
-  
-  /* .header__main .header__info{
-    display: block;
-  } */
 
   .header__main .header__info h1{
     width: 100%;
@@ -130,8 +152,16 @@ header .header__main img{
     text-align: center;
   }
 
+  .circle{
+    top: 1300px;
+    right: 125px;
+  }
+
+  /* projects */
+
+  .projects__section .projects__container{
+    grid-template-columns: 1fr;
+  }
+
 }
-
-
-
 
