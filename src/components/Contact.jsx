@@ -1,6 +1,24 @@
 import "./Contact.css";
+import { useState } from "react";
+import { sendCustomeEmail } from "./Email";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const changeHandler = (e) => {
+    let { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    sendCustomeEmail(form);
+  };
+
   return (
     <section id="contact" className="contact__wrapper">
       <div className="contact__section--wrapper">
@@ -13,13 +31,25 @@ const Contact = () => {
               possible.
             </p>
           </div>
-          <form action="">
-            <input type="text" name="name" placeholder="NAME" />
-            <input type="email" name="email" placeholder="EMAIL" />
+          <form action="" onSubmit={submitHandler}>
+            <input
+              type="text"
+              name="name"
+              placeholder="NAME"
+              value={form.name}
+              onChange={changeHandler}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="EMAIL"
+              onChange={changeHandler}
+            />
             <textarea
               type="text"
               name="message"
               placeholder="MESSAGE"
+              onChange={changeHandler}
             ></textarea>
             <button type="submit">Send Message</button>
           </form>
@@ -61,7 +91,6 @@ const Contact = () => {
           </div>
         </footer>
       </div>
-     
     </section>
   );
 };
