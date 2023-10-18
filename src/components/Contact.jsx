@@ -2,7 +2,7 @@ import "./Contact.css";
 import { useState } from "react";
 import { sendCustomeEmail } from "./Email";
 
-const Contact = () => {
+const Contact = ({ modal, setModal }) => {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -17,6 +17,12 @@ const Contact = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     sendCustomeEmail(form);
+    setModal(!modal);
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -43,12 +49,14 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="EMAIL"
+              value={form.email}
               onChange={changeHandler}
             />
             <textarea
               type="text"
               name="message"
               placeholder="MESSAGE"
+              value={form.message}
               onChange={changeHandler}
             ></textarea>
             <button type="submit">Send Message</button>
