@@ -1,11 +1,10 @@
 import emailjs from "@emailjs/browser";
 
-const public_key = import.meta.env.VITE_REACT_APP_EMAIL_PUBLIC_KEY
-const service_id = import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID
-const template_id = import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID
+const public_key = import.meta.env.VITE_REACT_APP_EMAIL_PUBLIC_KEY;
+const service_id = import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID;
+const template_id = import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID;
 
 const sendCustomeEmail = (form) => {
-
   emailjs
     .send(
       service_id,
@@ -21,7 +20,6 @@ const sendCustomeEmail = (form) => {
       console.log("Email sent Successfully!");
     })
     .catch((err) => console.log(`failed to send email ${err}`));
-
 };
 
 export { sendCustomeEmail };
