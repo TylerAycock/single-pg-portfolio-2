@@ -3,6 +3,7 @@ import market from "../assets/images/e-commerce.png";
 import agecalc from "../assets/images/age-calculator.png";
 import register from "../assets/images/register-pg.png";
 import results from "../assets/images/results.png";
+import news from "../assets/images/news-preview.jpg";
 import qr from "../assets/images/qr-code.png";
 
 const Projects = () => {
@@ -37,6 +38,31 @@ const Projects = () => {
             </div>
           </div>
           <h3>The Market Place</h3>
+          <div className="projects__items--skills">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+          </div>
+        </div>
+
+        <div className="projects__items">
+          <div
+            className="projects__item--img"
+            style={{ backgroundImage: `url(${news})` }}
+          >
+            <div className="projects__overlay">
+              <a href="https://splendid-elf-6a5a39.netlify.app/" target="blank">
+                View Project
+              </a>
+              <a
+                href="https://github.com/TylerAycock/news__homepage"
+                target="blank"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+          <h3>News Homepage</h3>
           <div className="projects__items--skills">
             <p>HTML</p>
             <p>CSS</p>
