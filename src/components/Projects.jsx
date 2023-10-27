@@ -4,7 +4,7 @@ import agecalc from "../assets/images/age-calculator.png";
 import register from "../assets/images/register-pg.png";
 import results from "../assets/images/results.png";
 import news from "../assets/images/news-preview.jpg";
-import qr from "../assets/images/qr-code.png";
+import todo from "../assets/images/todo.png";
 
 const Projects = () => {
   return (
@@ -63,6 +63,34 @@ const Projects = () => {
             </div>
           </div>
           <h3>News Homepage</h3>
+          <div className="projects__items--skills">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+          </div>
+        </div>
+
+        <div className="projects__items">
+          <div
+            className="projects__item--img"
+            style={{ backgroundImage: `url(${todo})` }}
+          >
+            <div className="projects__overlay">
+              <a
+                href="https://funny-crostata-f70b20.netlify.app/"
+                target="blank"
+              >
+                View Project
+              </a>
+              <a
+                href="https://github.com/TylerAycock/new-task-list"
+                target="blank"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+          <h3>Task List</h3>
           <div className="projects__items--skills">
             <p>HTML</p>
             <p>CSS</p>
@@ -147,33 +175,6 @@ const Projects = () => {
             </div>
           </div>
           <h3>Results Summary</h3>
-          <div className="projects__items--skills">
-            <p>HTML</p>
-            <p>CSS</p>
-          </div>
-        </div>
-
-        <div className="projects__items">
-          <div
-            className="projects__item--img"
-            style={{ backgroundImage: `url(${qr})` }}
-          >
-            <div className="projects__overlay">
-              <a
-                href="https://elegant-zuccutto-98c122.netlify.app/"
-                target="blank"
-              >
-                View Project
-              </a>
-              <a
-                href="https://github.com/TylerAycock/qr-code-component"
-                target="blank"
-              >
-                View Code
-              </a>
-            </div>
-          </div>
-          <h3>QR Code</h3>
           <div className="projects__items--skills">
             <p>HTML</p>
             <p>CSS</p>
