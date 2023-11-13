@@ -5,6 +5,7 @@ import register from "../assets/images/register-pg.png";
 import results from "../assets/images/results.png";
 import news from "../assets/images/news-preview.jpg";
 import todo from "../assets/images/todo.png";
+import products from "../assets/images/prodpg-preview.jpg";
 
 const Projects = () => {
   return (
@@ -38,6 +39,34 @@ const Projects = () => {
             </div>
           </div>
           <h3>The Market Place</h3>
+          <div className="projects__items--skills">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+          </div>
+        </div>
+
+        <div className="projects__items">
+          <div
+            className="projects__item--img"
+            style={{ backgroundImage: `url(${products})` }}
+          >
+            <div className="projects__overlay">
+              <a
+                href="https://chimerical-entremet-e1a823.netlify.app/#"
+                target="blank"
+              >
+                View Project
+              </a>
+              <a
+                href="https://github.com/TylerAycock/product-page"
+                target="blank"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+          <h3>Product Page</h3>
           <div className="projects__items--skills">
             <p>HTML</p>
             <p>CSS</p>
@@ -151,33 +180,6 @@ const Projects = () => {
             <p>HTML</p>
             <p>CSS</p>
             <p>Javascript</p>
-          </div>
-        </div>
-
-        <div className="projects__items">
-          <div
-            className="projects__item--img"
-            style={{ backgroundImage: `url(${results})` }}
-          >
-            <div className="projects__overlay">
-              <a
-                href="https://enchanting-fenglisu-0db0c5.netlify.app/"
-                target="blank"
-              >
-                View Project
-              </a>
-              <a
-                href="https://github.com/TylerAycock/result-summary"
-                target="blank"
-              >
-                View Code
-              </a>
-            </div>
-          </div>
-          <h3>Results Summary</h3>
-          <div className="projects__items--skills">
-            <p>HTML</p>
-            <p>CSS</p>
           </div>
         </div>
       </div>
