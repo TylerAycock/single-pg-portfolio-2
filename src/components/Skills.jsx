@@ -2,12 +2,12 @@ import "./Skills.css";
 
 const Skills = () => {
   let data = [
-    { skill: "HTML", years: 1 },
-    { skill: "CSS", years: 1 },
-    { skill: "JavaScript", years: 1 },
-    { skill: "React", years: 1 },
-    { skill: "Git", years: 1 },
-    { skill: "npm", years: 1 },
+    { skill: "HTML", years: 3 },
+    { skill: "CSS", years: 3 },
+    { skill: "JavaScript", years: 3 },
+    { skill: "React", years: 2 },
+    { skill: "Git", years: 2 },
+    { skill: "npm", years: 2 },
   ];
   return (
     <section className="skills__section">
