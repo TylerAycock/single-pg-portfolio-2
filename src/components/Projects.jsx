@@ -2,7 +2,7 @@ import "./Projects.css";
 import market from "../assets/images/e-commerce.png";
 import agecalc from "../assets/images/age-calculator.png";
 import register from "../assets/images/register-pg.png";
-import results from "../assets/images/results.png";
+// import results from "../assets/images/results.png";
 import news from "../assets/images/news-preview.jpg";
 import todo from "../assets/images/todo.png";
 import products from "../assets/images/prodpg-preview.jpg";
